@@ -1,0 +1,42 @@
+<header>
+  <section class="top-banner-wrapper py-2">
+    <div class="container">
+      <div class="d-flex flex-wrap justify-content-center justify-content-md-between align-items-center">
+        <h1 class="logo mb-0">Nebo Chiropractic</h1>
+
+        <div id="phone-location" class="text-center text-md-end">
+          <div>(801) 465-8177</div>
+          <div>675 S 100 W #4</div>
+          <div>Payson, Utah 84651</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <div class="container-fluid justify-content-center">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-md-center" id="navbarCollapse">
+        <ul
+          class="navbar-nav mb-2 mb-md-0 w-50 mx-auto flex-column flex-md-row align-items-center align-items-md-baseline justify-content-center justify-content-md-between text-center text-md-start">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="Home" routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }" routerLink="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="About Us" [routerLinkActiveOptions]="{ exact: false }"
+              routerLinkActive="active" routerLink="/about-us">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="Office Hours" [routerLinkActiveOptions]="{ exact: false }"
+              routerLinkActive="active" routerLink="/office-hours">Office hours</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
