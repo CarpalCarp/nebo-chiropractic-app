@@ -10,9 +10,41 @@
   transform: translateY(0);
 }
 
-// Optional stagger for cards
 .row>.col-lg-3 {
+  // Optional stagger for cards
   transition-delay: calc(0.2s * var(--order, 0));
 }
 
 /* End of fade-in animation styles */
+
+/* Animated underline for links */
+.animated-link-container {
+  position: relative;
+  display: inline-block;
+}
+
+.animated-link {
+  text-decoration: none;
+  color: #000;
+  padding-bottom: 5px;
+}
+
+.animated-link::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  display: block;
+  margin: auto;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #000;
+  transition: width 0.3s ease-out;
+}
+
+.animated-link:hover::after {
+  width: 100%;
+}
+
+/* End of animated underline styles */
